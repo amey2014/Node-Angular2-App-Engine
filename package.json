@@ -1,0 +1,28 @@
+{
+  "name": "segmentation",
+  "version": "1.0.0",
+  "description": "Segmentation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+
+  },
+  "scripts": {
+    "start": "node app.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud app deploy app.yaml"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "passport": "*",
+    "passport-jwt": "*",
+    "redis": "^2.7.1"
+  },
+  "author": "eTouch Systems",
+  "license": "ISC"
+}
