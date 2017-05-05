@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
 app.get('/healthCheck', (req, res) => {
 	console.log("GET /healthCheck");
-    res.status(200).send({ status: 'UP' });
+    res.status(200).send({ status: 'UP', message: 'Server is up and running!!!' });
 });
 
 app.get('*', (req,res) => {
